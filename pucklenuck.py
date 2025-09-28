@@ -67,7 +67,7 @@ if analysis == "skaters":
     flag = True
     count = 0
     while (flag):
-        players = input('Enter teams (Fname Lname/Fname Lname): \n')
+        players = input('Enter skaters (Fname Lname/Fname Lname): \n')
 
         if '/' in players:
             player1, player2 = players.split('/')
@@ -156,7 +156,7 @@ if analysis == "goalies":
     flag = True
     count = 0
     while (flag):
-        goalies = input('Enter teams (Fname Lname/Fname Lname): \n')
+        goalies = input('Enter goalies (Fname Lname/Fname Lname): \n')
 
         if '/' in goalies:
             goalie1, goalie2 = goalies.split('/')
@@ -336,3 +336,4 @@ if analysis == "teams":
         print(scores(t1Data.iloc[0], t2Data.iloc[0]))
     
     print(newTeams.head(10))
+
